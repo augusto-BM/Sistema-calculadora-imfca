@@ -1,0 +1,102 @@
+
+/* start cards */
+.cards {
+  background-image: url('../../../vista/login/fondo-login.jpg');
+  /* Ruta a tu imagen de fondo */
+  background-size: cover;
+  /* Ajustar el tamaño de la imagen para cubrir el contenedor */
+  background-position: center;
+  /* Centrar la imagen */
+  background-repeat: no-repeat;
+  /* Evitar que la imagen de fondo se repita */
+  min-height: 300px;
+  align-items: center;
+}
+
+.card__items {
+  text-align: center;
+  position: relative;/* Establecer posición relativa para poder superponer elementos */
+  margin-bottom: 10px;
+  color: white;
+
+}
+
+.card__items:hover {
+  background-color: #020e39 !important;
+  cursor: pointer;
+  color: white;
+}
+
+.card__background {
+  position: absolute;
+  /* Establecer posición absoluta para superponer la imagen sobre el contenido */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background-color: rgba(255, 255, 255, 0.5); */
+  /* Color de fondo con transparencia */
+}
+
+.card__empresas {
+  margin: 0 auto;
+  /* Centrar horizontalmente los elementos hijos */
+  width: 80%;
+  /* Ajusta el ancho según tus necesidades */
+  position: relative;
+  /* Establecer posición relativa para que los elementos hijos se superpongan correctamente */
+  z-index: 1;
+  /* Establecer un índice z para que los elementos hijos estén sobre la imagen de fondo */
+}
+
+.admin-color {
+  color: #04b7ee;
+  font-size: larger;
+}
+.cards .card__items {
+  border-radius: 10px;
+  width: 220px;
+  height: 140px;
+}
+
+.pasaron {
+  color: #b2ff98 !important;
+  font-size: 25px !important;
+}
+.asistieron {
+  font-size: 12px !important;
+}
+.total {
+  margin-top: 15px !important;
+}
+
+.btn-postulantes-desactivos i {
+  color: #c44440 !important;
+}
+.btn-postulantes-desactivos i:hover {
+  cursor: pointer;
+  color: #ff0000 !important;
+}
+/* end dashboard */
+
+/* ----- DIV FILTROS DE FECHAS ----- */
+.filtradoFecha {
+  width: 100%;
+  display: flex;
+}
+
+.fecha_col {
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.fa-search {
+  left: -5px;
+}
+
+.valid {
+  color: red;
+}
+
+

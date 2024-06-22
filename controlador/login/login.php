@@ -30,7 +30,7 @@ if(isset($_POST['submit'])){
         //INGRESAMOS A LOS CAMPOS DEL RESULTADO EN ESTE CASO PERTENECE A LA TABLA LOGIN
         $row = mysqli_fetch_array($result);
         if ($row['rol'] == $rol_general) {
-            $_SESSION['general_name'] = "GENERAL";
+            $_SESSION['nombre_sesion'] = "GENERAL";
             $_SESSION['id_login'] = $row['id'];
             header('location: ../administrador/principal.php');
             exit;
