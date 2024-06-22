@@ -18,12 +18,12 @@
                     <span>Inicio</span>
                 </a>
             </li>
-           <li>
+           <!-- <li>
                 <a href="entrevistadores.php">
                     <i class="fas fa-usd-square me-2"></i>
                     <span>Precios</span>
                 </a>
-            </li>
+            </li> -->
             <!--  
             <li>
                 <a href="cuentas.php">
@@ -51,7 +51,7 @@
         <div class="linea"></div>
         <div class="usuario">
             <ul class="logout d-flex justify-content-center list-unstyled sidebar-cerrar-sesion">
-                <li class=" h7"><a class="nav-link" href="../../../vista/login/cerrar-sesion.php"><span>Cerrar Sesion</span><i class="fal fa-sign-out-alt ms-2"></i></a></li>
+                <li class=" h7"><a class="nav-link" href="../login/cerrar-sesion.php"><span>Cerrar Sesion</span><i class="fal fa-sign-out-alt ms-2"></i></a></li>
             </ul>
         </div>
     </div>

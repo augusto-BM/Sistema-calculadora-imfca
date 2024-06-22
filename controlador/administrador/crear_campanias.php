@@ -1,15 +1,11 @@
 
 <?php
-@include '../../modelo/conexion.php';
-session_start();
+    @include '../../modelo/conexion.php';
+    session_start();
 
-?>
-
-<?php
     // Verificar si el formulario ha sido enviado
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        
-
+    
         $nombre_campaña = $_POST["nombre_campaña"];
         $estado = "activo";
         
@@ -29,6 +25,5 @@ session_start();
         }
         
     }
-    
-    ?>
+?>
 

@@ -2,13 +2,11 @@
 @include "../../modelo/conexion.php";
 session_start();
 if (!isset($_SESSION['nombre_sesion'])) {
-    header('location:../../login/login.php');
+    header('location:../login/login.php');
 }
 ?>
 <!DOCTYPE html>
-
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -30,6 +28,7 @@ if (!isset($_SESSION['nombre_sesion'])) {
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    
     <script src="./js-principal/sidebar.js"></script>
     <script src="./js-principal/validarInputs.js"></script>
 
@@ -37,39 +36,16 @@ if (!isset($_SESSION['nombre_sesion'])) {
 
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
 
-    <!-- DATA TABLES -->
-
-    <!-- DataTables JavaScript -->
-    <script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.10.25/b-1.7.1/b-html5-1.7.1/datatables.min.js"></script>
-
-    <!-- JSZip (necesario para Buttons) -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
-
-    <!-- DataTables Buttons extension -->
-    <script type="text/javascript" src="https://cdn.datatables.net/buttons/1.7.1/js/dataTables.buttons.min.js"></script>
-    <script type="text/javascript" src="https://cdn.datatables.net/buttons/1.7.1/js/buttons.html5.min.js"></script>
-
-    <!-- jsPDF and pdfmake for PDF export -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
-
-    <!-- DataTables CSS -->
-    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.10.25/b-1.7.1/b-html5-1.7.1/datatables.min.css" />
-
 
     <!-- SCRIPT AJAX LIBRERIA DATATABLES - TABLA PRINCIPAL-->
-    <script src="./js-principal/tabla-principal.js"></script>
+    <!-- <script src="./js-principal/tabla-principal.js"></script> -->
     <!-- -------------------------- -->
 
-    <!-- SCRIPT AJAX - ESTADO DEL BOTON Y DEL POSTULANTE -->
-    <script src="./js-principal/estadoBontonTablaPrincipal.js"></script>
+    <!-- SCRIPT AJAX - ESTADO DEL BOTON Y DE LA CAMPAÑA -->
+    <script src="./js-principal/estadoBotonCampanias.js"></script>
     <!-- ----------------------------------------------------------- -->
 
-    <!-- SCRIPT AJAX - ESTADO DEL BOTON Y DEL POSTULANTE DESDE MODAL NO SELECCIONADOS-->
-    <script src="./js-principal/estadoBontonModalTablaNoSeleccionados.js"></script>
-    <!-- ----------------------------------------------------------- -->
-
+ 
     <!-- SCRIPT AJAX - VER INFORMACION DE UN POSTULANTE SELECCIONADO -->
     <script src="./js-principal/verInformacionPostulanteSeleccionadol.js"></script>
     <!-- ----------------------------------------------------------- -->
@@ -78,9 +54,6 @@ if (!isset($_SESSION['nombre_sesion'])) {
     <script src="./js-principal/editarInformacionTablaPrincipal.js"></script>
     <!-- -------------------------------------------------------------- -->
 
-    <!-- SCRIPT AJAX - VER INFORMACION DE TODOS LOS POSTULANTES NO SELECCIONADOS -->
-    <script src="./js-principal/verInformacionTablaModalNoSeleccionados.js"></script>
-    <!-- ------------------------------------------------------------------ -->
 
 </head>
 
@@ -123,9 +96,9 @@ if (!isset($_SESSION['nombre_sesion'])) {
                     <?php @include './php-principal/modal_crear_precios.php' ?>
                     <!-- *************************************** -->
 
-                    <div class="btn-postulantes-desactivos">
+                    <!-- <div class="btn-postulantes-desactivos">
                         <a href="" class="btn-verDesactivo"><i class="fas fa-eye-slash me-5 h4"></i></a>
-                    </div>
+                    </div> -->
                 </div>
                 </div>
 
