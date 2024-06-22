@@ -1,0 +1,25 @@
+body, html {
+  height: 100vh;
+  width: 100vw; /* Opcional: ajusta el ancho del contenedor */
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('../imagenes/fondo-campanias.jpg'); 
+  background-size: cover;
+  background-position: center;
+
+}
+
+.container {
+  text-align: center;
+  max-width: 450px; /* Ajusta el ancho máximo según tus necesidades */
+  padding: 20px;
+  border: 1px solid #ccc; /* Borde opcional para visualización */
+  background-color: #f9f9f9; /* Color de fondo opcional */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 15px;
+}
+
+  

@@ -1,0 +1,14 @@
+.precio-punta{
+    border-radius: 10px;
+}
+.precio-punta label{
+    font-size: 12px;
+}
+
+.precio-punta input{
+    height: 20px;
+    font-size: 12px;
+    width: 70%;
+    margin: 0 auto;
+
+}
