@@ -6,7 +6,7 @@
     <div class="general">
         <h1 class="E-classe text-center ms-auto me-auto  h5 mb-4"><b>DASHBOARD</b></h1>
         <h1 class="E-classe text-center ms-auto me-auto h6 nombre-lugar mb-4 "><b>GENERAL</b></h1>
-        <img class="rounded-circle" src="./imagen-principal/admin-logo.png" alt="img-admin" height="120" width="120">
+        <img class="rounded-circle" src="../imagenes/admin-logo.png" alt="img-admin" height="120" width="120">
     </div>
     <div class="linea"></div>
 
@@ -18,31 +18,6 @@
                     <span>Inicio</span>
                 </a>
             </li>
-           <!-- <li>
-                <a href="entrevistadores.php">
-                    <i class="fas fa-usd-square me-2"></i>
-                    <span>Precios</span>
-                </a>
-            </li> -->
-            <!--  
-            <li>
-                <a href="cuentas.php">
-                    <i class="fas fa-user-shield me-2"></i>
-                    <span>Cuentas</span>
-                </a>
-            </li>
-            <li>
-                <a href="empresas.php">
-                    <i class="fas fa-usd-square me-2"></i>
-                    <span>Empresas</span>
-                </a>
-            </li>
-            <li>
-                <a href="graficos.php">
-                    <i class="fas fa-file-chart-line me-2"></i>
-                    <span>Graficos</span>
-                </a>
-            </li> -->
         </ul>
 
     </nav>

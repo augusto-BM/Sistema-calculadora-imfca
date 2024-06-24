@@ -1,5 +1,5 @@
 <div class="button-add-student">
-  <button type="button" class="btn btn-success me-5" data-bs-toggle="modal" data-bs-target="#modalCrearPrecios" data-bs-whatever="@mdo"><i class="fas fa-building" style='color:#fff;'></i> Registrar Precios <i class="fa-solid fa-square-plus"></i></button>
+  <button type="button" class="btn btn-success me-5" data-bs-toggle="modal" data-bs-target="#modalCrearPrecios" data-bs-whatever="@mdo"><i class="fas fa-usd-square me-2"></i>Registrar Precios <i class="fa-solid fa-square-plus"></i></button>
   <div class="modal fade" id="modalCrearPrecios" tabindex="-1" aria-labelledby="modalCrearPreciosLabel" aria-hidden="true">
     <div class="modal-dialog modal-xl">
       <div class="modal-content">

@@ -37,6 +37,9 @@ function cambiarEstado(btn) {
                     timer: 1500,
                 });
             }
+            setTimeout(function() {
+                location.reload();
+            }, 1500);
         }
     };
     xhr.send("id=" + id + "&estado=" + nuevoEstado);
