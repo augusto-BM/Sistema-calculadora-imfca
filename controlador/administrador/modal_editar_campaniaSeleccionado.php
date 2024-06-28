@@ -34,7 +34,6 @@ if (isset($_POST['click_btn_editar'])) {
             array_push($array_datos_obtenidos, $fila);
             header('Content-Type: application/json');
             echo json_encode($array_datos_obtenidos);
-            exit;
         }
     }
 }
@@ -64,19 +63,21 @@ if (isset($_POST['click_btn_editar_cambios'])) {
                       WHERE id = '$id_campania'";
 
     // Actualizar precios basado en id_campania
-    $sql_precios = "UPDATE precios SET
-                        termino_potencia1 = '$termino_potencia1',
-                        termino_potencia2 = '$termino_potencia2',
-                        termino_energia = '$termino_energia',
-                        Potencia_V = '$Potencia_V',
-                        consumo_energia = '$consumo_energia',
-                        termino_rl1 = '$termino_rl1',
-                        termino_rl2 = '$termino_rl2',
-                        termino_rl3 = '$termino_rl3',
-                        tv1 = '$tv1',
-                        tv2 = '$tv2',
-                        tv3 = '$tv3'
-                    WHERE id_precio IN (SELECT id_precio FROM campaings WHERE id = '$id_campania')";
+    $sql_precios = "UPDATE precios 
+                    INNER JOIN campaings ON precios.id = campaings.id
+                    SET
+                        precios.termino_potencia1 = '$termino_potencia1',
+                        precios.termino_potencia2 = '$termino_potencia2',
+                        precios.termino_energia = '$termino_energia',
+                        precios.Potencia_V = '$Potencia_V',
+                        precios.consumo_energia = '$consumo_energia',
+                        precios.termino_rl1 = '$termino_rl1',
+                        precios.termino_rl2 = '$termino_rl2',
+                        precios.termino_rl3 = '$termino_rl3',
+                        precios.tv1 = '$tv1',
+                        precios.tv2 = '$tv2',
+                        precios.tv3 = '$tv3'
+                    WHERE campaings.id = '$id_campania'";
 
     // Ejecutar las consultas
     if (mysqli_query($conn, $sql_campaings) && mysqli_query($conn, $sql_precios)) {
