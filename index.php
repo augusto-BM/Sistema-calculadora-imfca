@@ -25,7 +25,7 @@
         <div class="cards">
             <?php
             include './modelo/conexion.php';
-            $sql_campaings = "SELECT * FROM campaings";
+            $sql_campaings = "SELECT * FROM campaings WHERE estado = 'activo'";
 
             $resultado_campaings = mysqli_query($conn, $sql_campaings);
 
