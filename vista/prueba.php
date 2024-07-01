@@ -43,15 +43,16 @@
 
 <body>
     <div class="container">
-        <fieldset>
-            <legend>Calculo</legend>
-            <div class="container-fluid">
-                <div class="row">
-                    <div>
-                        <label for="">Dia</label>
-                        <input type="text" value="42">
-                    </div>
-                    <div class="col-md-6">
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6">
+                    <fieldset>
+                        <legend>Calculo:</legend>
+                        <div>
+                            <label for="">Dia</label>
+                            <input type="text" value="42">
+                        </div>
                         <div class="container" id="formulario1">
                             <div class="table-responsive">
                                 <table class="table table-bordered">
@@ -82,9 +83,6 @@
                                 </table>
                             </div>
                         </div>
-                    </div>
-
-                    <div class="col-md-6">
                         <div class="container" id="formulario2">
                             <div class="table-responsive">
                                 <table class="table table-bordered">
@@ -108,15 +106,14 @@
                                 </table>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </fieldset>
+                    </fieldset>
 
-        <div class="container">
-            <div class="row">
+                </div>
+
+
                 <div class="col-md-6">
                     <fieldset>
+                        <br>
                         <legend>Datos del cliente: </legend>
                         <div class="container-fluid">
                             <div class="table-responsive">
@@ -143,13 +140,23 @@
                             </div>
                         </div>
                     </fieldset>
-                </div>
-                <div class="col-md-6">
                     <br>
-                    <div class="conatiner">
-                        <label for="">Total</label>
-                        <input type="text" value="0">
-                    </div>
+                    <fieldset>
+                        <legend>Total factura actual del cliente:</legend>
+                        <div class="conatiner">
+                            <br>
+                            <label for="">Total</label>
+                            <input type="text" value="0">
+                        </div>
+                        <br>
+                    </fieldset>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
                     <br>
                     <fieldset>
                         <legend>Resultado:</legend>

@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    font-family:'Times New Roman', Times, serif
+}
 .precio-punta{
     border-radius: 10px;
 }
@@ -11,4 +15,59 @@
     width: 70%;
     margin: 0 auto;
 
+}
+
+
+/* ********* ESTILO TABLAS ********** */
+.d-flex {
+    display: flex;
+    justify-content: center;
+    /* Centrado horizontal */
+    align-items: center;
+    /* Centrado vertical */
+}
+
+.align-middle {
+    vertical-align: middle !important;
+    /* Asegura que el contenido de las celdas con rowspan se centre verticalmente */
+}
+
+.table-bordered td,
+.table-bordered th {
+    border: 1px solid #000;
+    /* Borde de la tabla */
+    text-align: center;
+}
+
+.table-info {
+    background-color: #d1ecf1;
+    /* Color de fondo de la fila de encabezado */
+}
+
+fieldset,
+legend {
+    all: revert;
+}
+/* ********* *********** ********** */
+
+.termino{
+    font-size: 12px;
+    background-color: #65CD4A !important;
+}
+
+.precios{
+    width:90%;
+    text-align: center;
+}
+.valor{
+    padding: 0px;
+    font-size: 12px;
+
+}
+.subt{
+    font-size: 11.5px;
+}
+
+.dia{
+    width: 50px !important;
 }
