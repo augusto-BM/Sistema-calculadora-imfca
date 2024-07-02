@@ -53,11 +53,14 @@ legend {
 .termino{
     font-size: 12px;
     background-color: #65CD4A !important;
+    letter-spacing: 2px;
+
 }
 
 .precios{
     width:90%;
     text-align: center;
+    border-radius: 40px;
 }
 .valor{
     padding: 0px;
@@ -70,4 +73,41 @@ legend {
 
 .dia{
     width: 50px !important;
+}
+
+.resultado_factura_sin_impuestos, .resultado_factura_con_impuestos{
+    border: none;
+    letter-spacing: 1px;
+    margin-left: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width:25%;
+}
+.resultado_factura_sin_impuestos, .resultado_factura_con_impuestos:focus{
+    outline: none;
+}
+
+.th_resultado{
+    font-size: 13px;
+}
+
+.cliente_totalp{
+    width:90%;
+    border: none;
+    letter-spacing: 1px;
+    text-align: center;
+}
+.cliente_totalp:focus{
+    outline: none;
+}
+
+.mostrar{
+    font-size: 12px;
+    width:50px;
+    border: none;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.mostrar:focus{
+    outline: none;
 }

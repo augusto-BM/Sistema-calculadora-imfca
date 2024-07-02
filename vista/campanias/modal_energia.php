@@ -18,7 +18,7 @@
                                         <legend>Calculo:</legend>
                                         <div class="text-start" style="margin-left: 30px; margin-bottom:10px">
                                             <label for="dia"><b>DIA</b></label>
-                                            <input type="text" name="dia" value="42" class="text-center dia">
+                                            <input type="text" value="30" class="text-center dia" id="dia" name="dia">
                                         </div>
                                         <div class="container-fluid" id="formulario1">
                                             <div class="table-responsive">
@@ -36,15 +36,15 @@
                                                     <tbody>
                                                         <tr>
                                                             <td><b class="subt">P1:</b></td>
-                                                            <td class="inputs"><input type="text" value="0.1" class="precios valor"></td>
-                                                            <td rowspan="2" class="align-middle"><input type="text" value="4.6" class="precios valor"></td>
-                                                            <td class="valor">19.32</td>
-                                                            <td rowspan="2" class="align-middle valor">25.116</td>
+                                                            <td class="inputs"><input type="text" value="0.1" class="precios valor" id="precio_potencia_punta" name="precio_potencia_punta"></td>
+                                                            <td rowspan="2" class="align-middle"><input type="text" value="4.6" class="precios valor" id="precio_potencia_contratada" name="precio_potencia_contratada"></td>
+                                                            <td class=""><input type="text" value="19.32" class="mostrar" readonly ></td>
+                                                            <td rowspan="2" class="align-middle valor"><input type="text" value="25.116" class="mostrar" readonly ></td>
                                                         </tr>
                                                         <tr>
                                                             <td><b class="subt">P2:</b></td>
-                                                            <td><input type="text" value="0.03" class="precios valor"></td>
-                                                            <td class="valor">5.796</td>
+                                                            <td><input type="text" value="0.03" class="precios valor" id="precio_potencia_valle" name="precio_potencia_valle"></td>
+                                                            <td class=""><input type="text" value="5.796" class="mostrar" readonly ></td>
                                                         </tr>
                                                     </tbody>
                                                 </table>
@@ -65,8 +65,8 @@
                                                     </thead>
                                                     <tbody>
                                                         <tr>
-                                                            <td class="valor"><input type="text" value="0.114" class="precios valor"></td>
-                                                            <td class="valor"><input type="text" value="100" class="precios valor"></td>
+                                                            <td class="valor"><input type="text" value="0.114" class="precios valor" id="kilovatio_ofrecido" name="kilovatio_ofrecido"></td>
+                                                            <td class="valor"><input type="text" value="100" class="precios valor" id="consumo_cliente" name="consumo_cliente"></td>
                                                             <td class="valor">11.40</td>
                                                         </tr>
                                                     </tbody>
@@ -88,19 +88,19 @@
                                                     <tbody>
                                                         <tr>
                                                             <th class="subt">P1</th>
-                                                            <td><input type="text" value="0" class="precios valor"></td>
+                                                            <td><input type="text" class="precios valor" id="cliente_p1" name="cliente_p1"></td>
                                                         </tr>
                                                         <tr>
                                                             <th class="subt">P2</th>
-                                                            <td><input type="text" value="0" class="precios valor"></td>
+                                                            <td><input type="text" class="precios valor" id="cliente_p2" name="cliente_p2"></td>
                                                         </tr>
                                                         <tr>
                                                             <th class="subt">P3</th>
-                                                            <td><input type="text" value="0" class="precios valor"></td>
+                                                            <td><input type="text" class="precios valor" id="cliente_p3" name="cliente_p3"></td>
                                                         </tr>
                                                         <tr>
                                                             <th class="subt">Total</th>
-                                                            <td>0</td>
+                                                            <td><input type="text" class="cliente_totalp" id="cliente_totalp" name="cliente_totalp" readonly></td>
                                                         </tr>
                                                     </tbody>
                                                 </table>
@@ -112,7 +112,7 @@
                                         <legend>Factura actual:</legend>
                                         <div class="conatiner">
                                             <label for="" class=""><b>Total</b></label><br>
-                                            <input type="text" value="0" class="text-center" style="width:70%; background-color: #65CD4A">
+                                            <input type="text" value="0" class="text-center" style="width:70%; background-color: #65CD4A; letter-spacing: 1px; font-family: Verdana, Geneva, Tahoma, sans-serif;">
                                         </div>
                                         <br>
                                     </fieldset>
@@ -132,9 +132,9 @@
                                             <div class="table-responsive">
                                                 <table class="table table-bordered">
                                                     <tbody>
-                                                        <tr>
-                                                            <th class="valor"><i>TOTAL SIN IMPUESTO: </i> <label for="">12</label></th>
-                                                            <th class="valor"><i>TOTAL CON IMPUESTO: </i><label for="">14</label></th>
+                                                        <tr class="">
+                                                            <th class="th_resultado"><i>TOTAL SIN IMPUESTO: </i><input type="text" class="resultado_factura_sin_impuestos" id="factura_sin_impuestos" name="factura_sin_impuestos" readonly></th>
+                                                            <th class="th_resultado"><i>TOTAL CON IMPUESTO: </i><input type="text" class="resultado_factura_con_impuestos" id="factura_con_impuestos" name="factura_con_impuestos" readonly></th>
                                                         </tr>
                                                     </tbody>
                                                 </table>
