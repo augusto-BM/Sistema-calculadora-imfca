@@ -49,63 +49,41 @@
                 <div class="col-md-6">
                     <fieldset>
                         <legend>Calculo:</legend>
-                        <div>
-                            <label for="">Dia</label>
-                            <input type="text" value="42">
-                        </div>
+
                         <div class="container" id="formulario1">
                             <div class="table-responsive">
                                 <table class="table table-bordered">
                                     <thead>
                                         <tr>
-                                            <th colspan="5" class="table-info">TERMINO DE POTENCIA</th>
-                                        </tr>
-                                        <tr>
-                                            <th colspan="2">TP</th>
-                                            <th colspan="2"></th>
-                                            <th colspan="2">RESULTADO DE TP</th>
+                                            <th colspan="2">TERMINO FIJO ( MES)</th>
+                                            <th colspan="1">CONSUMO</th>
+                                            <th colspan="1">TV</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td>P1</td>
-                                            <td>0.1</td>
-                                            <td rowspan="2" class="align-middle">4.6</td>
-                                            <td>19.32</td>
-                                            <td rowspan="2" class="align-middle">25.116</td>
+                                            <th>RL1</th>
+                                            <td>2.25</td>
+                                            <td>0</td>
+                                            <td>0.05</td>
                                         </tr>
                                         <tr>
-                                            <td>P2</td>
-                                            <td>0.03</td>
-                                            <td>5.796</td>
+                                            <th>RL2</th>
+                                            <td>5.07</td>
+                                            <td>0</td>
+                                            <td>0.05</td>
+                                        </tr>
+                                        <tr>
+                                            <th>RL3</th>
+                                            <td>12.06</td>
+                                            <td>0</td>
+                                            <td>0.04</td>
                                         </tr>
                                     </tbody>
                                 </table>
                             </div>
                         </div>
-                        <div class="container" id="formulario2">
-                            <div class="table-responsive">
-                                <table class="table table-bordered">
-                                    <thead>
-                                        <tr>
-                                            <th colspan="5" class="table-info">TERMINO ENERGIA</th>
-                                        </tr>
-                                        <tr>
-                                            <th>TE</th>
-                                            <th>LO QUE A CONSUMIDO</th>
-                                            <th>RESULTADO TE</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>0.114</td>
-                                            <td>100</td>
-                                            <td>11.40</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
+
                     </fieldset>
 
                 </div>
@@ -114,26 +92,30 @@
                 <div class="col-md-6">
                     <fieldset>
                         <br>
-                        <legend>Datos del cliente: </legend>
+                        <legend>Resultado: </legend>
                         <div class="container-fluid">
                             <div class="table-responsive">
                                 <table class="table table-bordered">
                                     <tbody>
                                         <tr>
-                                            <th>P1</th>
-                                            <td>0</td>
-                                        </tr>
-                                        <tr>
-                                            <th>P2</th>
-                                            <td>0</td>
-                                        </tr>
-                                        <tr>
-                                            <th>P3</th>
-                                            <td>0</td>
+                                            <th>SIN IMPUESTOS</th>
+                                            <th>CON IMPUESTOS</th>
                                         </tr>
                                         <tr>
                                             <th>Total</th>
-                                            <td>0</td>
+                                            <th>21 %</th>
+                                        </tr>
+                                        <tr>
+                                            <td>2.25</td>
+                                            <td>0.1125</td>
+                                        </tr>
+                                        <tr>
+                                            <td>5.07</td>
+                                            <td>0.2535</td>
+                                        </tr>
+                                        <tr>
+                                            <td>12.06</td>
+                                            <td>0.4824</td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -142,10 +124,9 @@
                     </fieldset>
                     <br>
                     <fieldset>
-                        <legend>Total factura actual del cliente:</legend>
+                        <legend>Lo que paga el cliente:</legend>
                         <div class="conatiner">
                             <br>
-                            <label for="">Total</label>
                             <input type="text" value="0">
                         </div>
                         <br>

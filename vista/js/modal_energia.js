@@ -6,6 +6,9 @@
         const precio_potencia_punta = document.getElementById('precio_potencia_punta');
         const precio_potencia_valle = document.getElementById('precio_potencia_valle');
         const precio_potencia_contratada = document.getElementById('precio_potencia_contratada');
+        const precio_calculo_p1 = document.getElementById('calculo_p1');
+        const precio_calculo_p2 = document.getElementById('calculo_p2');
+        const precio_calculo_totalp = document.getElementById('calculo_totalp');
 
         const kilovatio_ofrecido = document.getElementById('kilovatio_ofrecido');
         const consumo_cliente = document.getElementById('consumo_cliente');
@@ -55,6 +58,11 @@
             // Aplicar factor de conversión para impuestos (ejemplo del 10%)
             const factorImpuestos = 0.10;
             const totalConImpuestos = totalSinImpuestos * (1 + factorImpuestos);
+
+            //Mostrar renderizado de calculos de potencia
+            precio_calculo_p1.value = resultadoPunta.toFixed(3);
+            precio_calculo_p2.value = resultadoValle.toFixed(3);
+            precio_calculo_totalp.value = totalTerminoPotencia.toFixed(3);
 
             // Mostrar resultados en los campos de resultado
             factura_sin_impuestos.value = totalSinImpuestos.toFixed(3);

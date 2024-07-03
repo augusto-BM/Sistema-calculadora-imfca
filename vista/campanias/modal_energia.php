@@ -38,13 +38,13 @@
                                                             <td><b class="subt">P1:</b></td>
                                                             <td class="inputs"><input type="text" value="0.1" class="precios valor" id="precio_potencia_punta" name="precio_potencia_punta"></td>
                                                             <td rowspan="2" class="align-middle"><input type="text" value="4.6" class="precios valor" id="precio_potencia_contratada" name="precio_potencia_contratada"></td>
-                                                            <td class=""><input type="text" value="19.32" class="mostrar" readonly ></td>
-                                                            <td rowspan="2" class="align-middle valor"><input type="text" value="25.116" class="mostrar" readonly ></td>
+                                                            <td class=""><input type="text" class="mostrar" id="calculo_p1" readonly ></td>
+                                                            <td rowspan="2" class="align-middle valor"><input type="text"  class="mostrar" id="calculo_totalp" readonly ></td>
                                                         </tr>
                                                         <tr>
                                                             <td><b class="subt">P2:</b></td>
                                                             <td><input type="text" value="0.03" class="precios valor" id="precio_potencia_valle" name="precio_potencia_valle"></td>
-                                                            <td class=""><input type="text" value="5.796" class="mostrar" readonly ></td>
+                                                            <td class=""><input type="text" class="mostrar" id="calculo_p2" readonly ></td>
                                                         </tr>
                                                     </tbody>
                                                 </table>
@@ -112,7 +112,7 @@
                                         <legend>Factura actual:</legend>
                                         <div class="conatiner">
                                             <label for="" class=""><b>Total</b></label><br>
-                                            <input type="text" value="0" class="text-center" style="width:70%; background-color: #65CD4A; letter-spacing: 1px; font-family: Verdana, Geneva, Tahoma, sans-serif;">
+                                            <input type="text" class="text-center" style="width:70%; background-color: #65CD4A; letter-spacing: 1px; font-family: Verdana, Geneva, Tahoma, sans-serif;">
                                         </div>
                                         <br>
                                     </fieldset>
